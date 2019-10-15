@@ -1,0 +1,102 @@
+Sending URL: https://www.alphavantage.co/query?function=BATCH_STOCK_QUOTES&symbols=AAPL&apikey=WA7C3UOYSO7QCPGD
+Response is:  {
+    "Meta Data": {
+        "1. Information": "Batch Stock Market Quotes",
+        "2. Notes": "IEX Real-Time",
+        "3. Time Zone": "US/Eastern"
+    },
+    "Stock Quotes": [
+        {
+            "1. symbol": "AAPL",
+            "2. price": "235.7300",
+            "3. volume": "16866884",
+            "4. timestamp": "2019-10-15 15:35:07"
+        }
+    ]
+}
+
+The current price of AAPL is: 235.7300
+
+Sending URL: https://www.alphavantage.co/query?function=BATCH_STOCK_QUOTES&symbols=FB&apikey=WA7C3UOYSO7QCPGD
+Response is:  {
+    "Meta Data": {
+        "1. Information": "Batch Stock Market Quotes",
+        "2. Notes": "IEX Real-Time",
+        "3. Time Zone": "US/Eastern"
+    },
+    "Stock Quotes": [
+        {
+            "1. symbol": "FB",
+            "2. price": "188.9500",
+            "3. volume": "12964777",
+            "4. timestamp": "2019-10-15 15:36:51"
+        }
+    ]
+}
+
+The current price of FB is: 188.9500
+
+Enter a stock symbol (or press ENTER to quit): GOOG
+
+Sending URL: https://www.alphavantage.co/query?function=BATCH_STOCK_QUOTES&symbols=GOOG&apikey=WA7C3UOYSO7QCPGD
+Response is:  {
+    "Meta Data": {
+        "1. Information": "Batch Stock Market Quotes",
+        "2. Notes": "IEX Real-Time",
+        "3. Time Zone": "US/Eastern"
+    },
+    "Stock Quotes": [
+        {
+            "1. symbol": "GOOG",
+            "2. price": "1245.0500",
+            "3. volume": "1134948",
+            "4. timestamp": "2019-10-15 15:36:37"
+        }
+    ]
+}
+
+The current price of GOOG is: 1245.0500
+
+Enter a stock symbol (or press ENTER to quit): T
+
+Sending URL: https://www.alphavantage.co/query?function=BATCH_STOCK_QUOTES&symbols=T&apikey=WA7C3UOYSO7QCPGD
+Response is:  {
+    "Meta Data": {
+        "1. Information": "Batch Stock Market Quotes",
+        "2. Notes": "IEX Real-Time",
+        "3. Time Zone": "US/Eastern"
+    },
+    "Stock Quotes": [
+        {
+            "1. symbol": "T",
+            "2. price": "37.9150",
+            "3. volume": "17358138",
+            "4. timestamp": "2019-10-15 15:38:53"
+        }
+    ]
+}
+
+The current price of T is: 37.9150
+
+Enter a stock symbol (or press ENTER to quit): AMZN 
+
+Sending URL: https://www.alphavantage.co/query?function=BATCH_STOCK_QUOTES&symbols=AMZN&apikey=WA7C3UOYSO7QCPGD
+Response is:  {
+    "Meta Data": {
+        "1. Information": "Batch Stock Market Quotes",
+        "2. Notes": "IEX Real-Time",
+        "3. Time Zone": "US/Eastern"
+    },
+    "Stock Quotes": [
+        {
+            "1. symbol": "AMZN",
+            "2. price": "1767.1850",
+            "3. volume": "2626669",
+            "4. timestamp": "2019-10-15 15:39:51"
+        }
+    ]
+}
+
+The current price of AMZN is: 1767.1850
+
+
