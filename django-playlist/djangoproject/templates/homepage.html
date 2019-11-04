@@ -1,0 +1,90 @@
+{% extends 'base_layout.html' %}
+{% block content %}
+    <div id="firstframe">
+      <img class="midbar" src="/static/txtur89.jpg">
+    </div>
+
+        <p id="logo"><h1>SYNERD</h1> </p>
+		<p id="dispora">synergy of Diaspora</p>
+
+
+
+			<div class="donate" href="#donate" >DONATE</div>
+			<div  class="register"><a href="accounts/joinus/">Register</a></div>
+
+
+
+  <div class="topsecondheader">
+      <a href="#"><p id="ourwork">Our Work</p></a>
+        <a href="#"><p id="memebers">Members</p></a>
+          <a href="#"><p id="resources">Resources</p></a>
+
+   </div>
+
+           <div id="middlsection"></div>
+
+          <div class="rightsectioin">
+        </div>
+    <div id="firstsquar"><h2>ID Protection</h2></div>
+    <div id="secondtsquar"><h2>Corpses<br>Repatration</h2></div>
+    <div id="thirdsquar"><h2>Assistance<br>Programs</h2></div>
+
+
+       <div class="lefttsecdiv"></div>
+       <div class="rightsecdiv"></div>
+
+        <video  id="myvideo" width="320" height="130" controls >
+           <source src="/static/habitat_video_web_720.mp4" type="video/mp4">
+        </video>
+          <audio  controls autoplay hidden >
+            <source  src="/static/habitat_audio.mp3" type="audio/mpeg" >
+             </audio>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <a class="contactus" href="#contactus">Contact Us</a>
+	<input type="text" class="txtsearch" placeholder="location">
+         <a href="#search" class="search-btn">Search</a>
+         <a class="aboutus" href="#aboutus">About Us</a>
+         <a class="galleries" href="#galleries">Galleries</a>
+
+			<p id="donates">Let's Serve Purposefully</p>
+      <nav class="nav1">
+        <ul>
+          <li>
+            <form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
+              {% csrf_token %}
+              <button type="submit">Logout</button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+	    <a href="accounts/login/"class="signin">Sign In </a>
+			<a href="accounts/joinus/" class="joinus">Join Us</a>
+
+
+
+ <img id="changeimg"  src="/static/cell3.jpg" width="60%" height="60%" no-repeat>
+ <div class="mycont">Drage and Drop Me at the Footer</div>
+ <img id="draggedimg"  src="/static/exit.png" >
+
+  <button id="btnAction" onclick="locate()">Get Location</button>
+   <div id="map-layer"></div>
+          <div class="leftopbox"><h2>Announcements</h2></div>
+          <div class="leftbottombox"><h2>Feature News</h2></div>
+          <div id="bottomfooter"  >
+		  <h3 class="test">synerD</h3>
+		<p class="ftlist">Address<br> Phone<br> Email<br> Website</p>
+		<p class="fttwo">Site Map &nbsp; | &nbsp; Terms & Conditions &nbsp; | &nbsp; Privacy Policy &nbsp; | &nbsp; Copyright @ 2019</p>
+		<ul class="ftlisttwo">
+			<li><a href="">Get Involved</li><br>
+			<li><a href="">Blog</li><br>
+			<li><a href="">Ways to Give</li>
+		</ul>
+		<ul class="ftlistthree">
+			<li><a href="">About us</li><br>
+			<li><a href="">Revenues</li><br>
+			<li><a href="">Expenditures</li>
+		</ul>
+	     </div>
+{% endblock %}

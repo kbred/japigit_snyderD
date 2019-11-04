@@ -1,0 +1,18 @@
+{% load static from staticfiles %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="{% static 'styles1.css' %}">
+  </head>
+  <body>
+    <h1>Join Us</h1>
+    <form class="site-form" action="/accounts/joinus/" method="post">
+      {% csrf_token %}
+      {{ form|crispy }}
+      <input type="submit" name="" value="Join us">
+    </form>
+  </body>
+</html>

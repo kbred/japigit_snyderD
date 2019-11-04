@@ -1,0 +1,14 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'styles2.css' %}">
+  </head>
+  <body>
+    <header class="wrapper">
+      {% block content %}
+      {% endblock %}
+  </body>
+</html>

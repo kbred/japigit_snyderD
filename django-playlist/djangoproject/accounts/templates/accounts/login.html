@@ -1,0 +1,18 @@
+{% load static from staticfiles %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'styles1.css' %}">
+  </head>
+  <body>
+    <h1>Log in</h1>
+    <form class="site-form" action="{% url 'accounts:login' %}" method="post">
+      {% csrf_token %}
+      {{ form|crispy }}
+      <input type="submit" name="" value="Login">
+    </form>
+  </body>
+</html>
