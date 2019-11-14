@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'articles',
     'accounts',
     'success',
+    'backend',
 ]
 
 MIDDLEWARE = [
