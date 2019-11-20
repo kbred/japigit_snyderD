@@ -8,13 +8,16 @@ class TransferredSubscription(models.Model):
     subscriberID = models.ForeignKey('Subscriber', on_delete=models.CASCADE)
 
 class Subscriber(models.Model):
-    username = models.ForeignKey('UserInfo', on_delete=models.CASCADE)
-    subscriptiontypecode = models.ForeignKey('SubscriptionType', on_delete=models.CASCADE)
-    servicecode = models.ForeignKey('Service', on_delete=models.CASCADE)
+    username = models.CharField(max_length=50)
+    subscriptiontypecode = models.CharField(max_length=50)
+    servicecode = models.CharField(max_length=50)
     requestdate = models.DateTimeField()
     startdate = models.DateTimeField()
     enddate = models.DateTimeField()
     motifofcancellation = models.TextField()
+
+    def __str__(self):
+        return self.username
 
 class Officer(models.Model):
     officecode = models.ForeignKey('Office', on_delete=models.CASCADE)
