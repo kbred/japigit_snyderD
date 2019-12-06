@@ -25,7 +25,7 @@ SECRET_KEY = '-b45@y-x5lw@)4sex7b)ryi8d7^qlxy0^dkac)f$h0q9=sz5x7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tapdec.pythonanywhere.com']
 
 
 # Application definition
@@ -60,7 +60,7 @@ ROOT_URLCONF = 'djangoproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['/home/tapdec/japigit_snyderD/django-playlist/djangoproject/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -69,6 +69,9 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'libraries': { # Adding this section should work around the issue.
+                'staticfiles' : 'django.templatetags.static',
+            },
         },
     },
 ]
